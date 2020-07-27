@@ -1,0 +1,17 @@
+.box {
+    width: 600px;
+    height: 300px;
+    margin: 100px;
+
+    display: flex;
+    align-items: center;
+}
+
+.boxes {
+    width: 100px;
+    height: 100px;
+    background-color: lightcoral;
+    border-radius: 20px;
+    margin: 3px;
+
+}
