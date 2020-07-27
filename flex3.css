@@ -1,0 +1,32 @@
+.box_container1 {
+    width: 600px;
+    height:110px;
+    display:flex;
+    justify-content:flex-start;
+    border:3px;
+    border-radius : 5px;
+}
+.box_container2 {
+    width: 600px;
+    height:110px;
+    display:flex;
+    justify-content:center;
+    border:3px;
+    border-radius : 5px;
+}
+.box_container3 {
+    width: 600px;
+    height:110px;
+    display:flex;
+    justify-content:flex-end;
+    border:3px;
+    border-radius : 5px;
+}
+
+.boxes {
+    width: 100px;
+    width: 100px;
+    background-color: lightcoral;
+    border-radius: 3px;
+    margin: 5px;
+}
