@@ -16,16 +16,36 @@ code_list = []
 
 title_list = []
 
+
+# for movie in movies_section:
+#     if isinstance(movie, NavigableString):
+#         continue
+#     if isinstance(movie, Tag):
+#         a_tag = movie.select_one('dl > dt > a')
+#         title = a_tag.text
+#         title_list.append(title)
+
+#         code = a_tag['href'][-6:].replace("=", "")
+#         code_list.append(code)
+
+#     print(title)
+#     print(code)
+
+content = []
+
 for movie in movies_section:
-    if isinstance(movie, NavigableString):
-        continue
-    if isinstance(movie, Tag):
-        a_tag = movie.select_one('dl > dt > a')
-        title = a_tag.text
-        title_list.append(title)
+    movie_dict = {}
+    a_tag = movie.select_one('dl > dt > a')
 
-        code = a_tag['href'][-6:].replace("=", "")
-        code_list.append(code)
+    movie_link = a_tag['href']
+    movie_title = a_tag.getText()
+    movie_code = movie_link.split('=')[1]
 
-    print(title)
-    print(code)
+    movie_data = {
+        'title': movie_title,
+        'code': movie_code
+    }
+
+    content.append(movie_data)
+
+print(content)
