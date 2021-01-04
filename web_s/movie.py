@@ -31,7 +31,7 @@ title_list = []
 #     print(title)
 #     print(code)
 
-final_movie_data = []
+content = []
 
 for movie in movies_section:
     movie_dict = {}
@@ -46,9 +46,6 @@ for movie in movies_section:
         'code': movie_code
     }
 
-    final_movie_data.append(movie_data)
+    content.append(movie_data)
 
-for movie in final_movie_data:
-    movie_code = movie('code')
-
-    REVIEW_URL = f''
+print(content)
