@@ -5,14 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style media="screen">
+        td,
+        th {
+            border: 1px solid;
+            width: 50px;
+            height: 50px;
+        }
+    </style>
 </head>
 
-<body>
+<body style="background-color: bisque;">
     <a href="https://www.google.com/search?q=%EC%86%8D%EC%84%B1&oq=%EC%86%8D%EC%84%B1&aqs=chrome..69i57j0i433j0i131i433j0i395i433l2j0i395j69i61l2.1952j1j7&sourceid=chrome&ie=UTF-8"
         target="_blank">속성이란</a>
 
 
-    <div>
+    <div id="top">
         <span>Lorem</span> ipsum dolor sit.
     </div>
     <!-- 블록 레벨은 한줄로 표시함 -->
@@ -77,7 +85,86 @@
         </dd>
     </dl>
 
+    <img src="./images/pizza.jpg" alt="피자" width="100%">
 
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table>
+        <caption>Monthly Savings</caption>
+        <thead>
+            <tr>
+                <th>Month</th>
+                <th>Savings</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td>Sum</td>
+                <td>180</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>January</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>80</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <caption>Monthly Savings</caption>
+        <thead>
+            <tr>
+                <th>Month</th>
+                <th>Savings</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="2">Sum</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>January</td>
+                <td rowspan="2">100</td>
+            </tr>
+            <tr>
+                <td>February</td>
+            </tr>
+        </tbody>
+    </table>
 
     <h1>
         History
