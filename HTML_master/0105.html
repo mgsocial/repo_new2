@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>table 만들기</title>
+
     <style>
         td,
         th {
@@ -15,11 +16,109 @@
             border-collapse: collapse;
             text-align: center;
         }
+
+        #id-selector {
+            font-size: 30px
+        }
+
+        .html.css {
+            border: 1px solid;
+        }
+
+        p[class="foo"] {
+            color: silver;
+        }
+
+        p[class][id] {
+            text-decoration: underline;
+        }
+
+        p[id="title"] {
+            text-decoration: underline;
+        }
+
+        /* p[class~="color"] {
+            font-style: italic;
+        } */
+
+        p[class^="color"] {
+            font-style: italic;
+        }
+
+        /* p[class$="color"] {
+            font-style: italic;
+        }
+
+        p[class*="color"] {
+            font-style: italic;
+        } */
+
+        /* div span {
+            color: red;
+        } */
+
+        /* div>span {
+            color: red;
+        } */
+
+        div+span {
+            color: red;
+        }
     </style>
+    <link rel="stylesheet" href="css/stlye.css">
 </head>
 
 <body>
-    <table>
+
+    <p style="color: gray;">Hello, CSS</p>
+    <p>This CSS tutorial contains hundreds of CSS examples.
+
+        With our online editor, you can edit the CSS, and click on a button to view the result.</p>
+
+    <p>This CSS tutorial contains hundreds of CSS examples.
+
+        With our online editor, you can edit the CSS, and click on a button to view the result.</p>
+
+    <p>This CSS tutorial contains hundreds of CSS examples.
+
+        With our online editor, you can edit the CSS, and click on a button to view the result.</p>
+
+    <p>This CSS tutorial contains hundreds of CSS examples.
+
+        With our online editor, you can edit the CSS, and click on a button to view the result.</p>
+
+    <!-- CSS 클래스 선택자 -->
+    <dl>
+        <dt class="html">HTML</dt>
+        <dd><span class="html">HTML</span>은 문서의 구조를 나타냅니다.</dd>
+        <dt class="css">CSS</dt>
+        <dd><span class="css">CSS</span>는 문서의 표현을 나타냅니다.</dd>
+    </dl>
+
+    <dt class="html css">JS</dt>
+    <dd><span class="html css">JS</span>는 문서의 동작을 나타냅니다.</dd>
+
+    <!-- ID 선택자 -->
+    <p id="id-selector" style="color: black;">id 선택자는 해쉬 기호를 사용합니다.</p>
+
+    <!-- 단순 속성으로 선택 -->
+    <p class="foo">Hello</p>
+    <p class="bar">CSS</p>
+    <p class="baz" id="title">HTML</p>
+
+    <p class="color hot">red</p>
+    <p class="cool color">blue</p>
+    <p class="colorful nature">rainbow</p>
+
+    <div>
+        <h1><span>HTML</span>: Hyper Text Markup Language</h1>
+        <span>CSS는 문서를 꾸며줍니다.</span>
+    </div>
+    <span>Javascript는 문서를 동적으로 제어할 수 있습니다.</span>
+    <p>HTML과 CSS와 Javascript를 이용해서 멋진 웹 사이트를 제작할 수 있습니다.</p>
+
+
+    <!-- <table>
         <caption> Specification values </caption>
         <thead>
             <tr>
@@ -67,41 +166,43 @@
             <label for="userpw"> 비밀번호 : </label>
             <input type="password" id="userpw"><br>
             성별 :<label for="male">남자</label> <input type="radio" name="gender" id="male">
-            <label for="female">여자</label> <input type="radio" name="gender" id="female"><br>
-            <!-- 라디오 버튼은 중복 선택이 불가능하며 하나의 항목만을 선택해야 함 -->
-            <!-- name 속성으로 라디오 종류가 같음을 명시함 -->
-        </fieldset>
-        <fieldset>
-            <legend>부가 정보</legend>
-            취미 :
-            영화감상<input type="checkbox" name="hobby">
-            음악감상<input type="checkbox" name="hobby">
-            독서<input type="checkbox" name="hobby"><br>
-            <!-- 체크박스는 중복선택이 가능함 -->
-            응원을 입력해주세요 : <input type="text" placeholder="최소 10글자 이상 최대 500글자로 제한" size="50" minlength="10"
-                maxlength="500" autofocus><br>
-            프로필 사진 업로드 : <input type="file"><br>
-            <select>
-                <option>서울</option>
-                <option>강원</option>
-                <option>여수</option>
-                <option selected>제주</option>
-            </select><br>
-            자기소개 :
-            <textarea cols="30" rows="5" placeholder="짧게 소개 해주세요"></textarea><br>
-            <!-- 한줄이 아닌 여러줄을 입력할 때 사용 -->
-        </fieldset>
-        <button type="submit">전송</button>
-        <button type="reset">
-            <img src="https://ppss.kr/wp-content/uploads/2015/09/%EC%BB%A4%EB%B2%84_%ED%97%AC%EC%A1%B0%EC%84%A0-copy.jpg"
-                alt="헬조선">
-            취소</button>
-        <input type="submit" value="전송"><br>
-        <input type="reset" value="취소"><br>
-        <input type="button" value="등록"><br>
-        <input type="image" src="https://www.ryl2u.com/images/login1.png" alt="로그인" width="100" height="50">
-        <!-- input 이미지를 활용해 로그인(이미지)를 삽입한 버튼을 구현함 -->
-    </form>
+            <label for="female">여자</label> <input type="radio" name="gender" id="female"><br> -->
+    <!-- 라디오 버튼은 중복 선택이 불가능하며 하나의 항목만을 선택해야 함 -->
+    <!-- name 속성으로 라디오 종류가 같음을 명시함 -->
+
+    <!-- </fieldset>
+    <fieldset>
+        <legend>부가 정보</legend>
+        취미 :
+        영화감상<input type="checkbox" name="hobby">
+        음악감상<input type="checkbox" name="hobby">
+        독서<input type="checkbox" name="hobby"><br> -->
+    <!-- 체크박스는 중복선택이 가능함 -->
+    <!-- 응원을 입력해주세요 : <input type="text" placeholder="최소 10글자 이상 최대 500글자로 제한" size="50" minlength="10" maxlength="500"
+            autofocus><br>
+        프로필 사진 업로드 : <input type="file"><br>
+        <select>
+            <option>서울</option>
+            <option>강원</option>
+            <option>여수</option>
+            <option selected>제주</option>
+        </select><br>
+        자기소개 :
+        <textarea cols="30" rows="5" placeholder="짧게 소개 해주세요"></textarea><br>-->
+    <!-- 한줄이 아닌 여러줄을 입력할 때 사용 -->
+    <!-- </fieldset>
+    <button type="submit">전송</button>
+    <button type="reset">
+        <img src="https://ppss.kr/wp-content/uploads/2015/09/%EC%BB%A4%EB%B2%84_%ED%97%AC%EC%A1%B0%EC%84%A0-copy.jpg"
+            alt="헬조선">
+        취소</button>
+    <button type="button"></button>
+    <input type="submit" value="전송"><br>
+    <input type="reset" value="취소"><br>
+    <input type="button" value="등록"><br>
+    <input type="image" src="https://www.ryl2u.com/images/login1.png" alt="로그인" width="100" height="50">-->
+    <!-- input 이미지를 활용해 로그인(이미지)를 삽입한 버튼을 구현함 -->
+    <!-- </form> -->
 
 
 
