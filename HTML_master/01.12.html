@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 연습 페이지입니다.</title>
+    <style>
+        a:link {
+            color: gray;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        a:visited {
+            color: seagreen;
+        }
+
+        p[class$="color"] {
+            font-style: italic;
+        }
+
+        li:first-child {
+            color: red;
+        }
+
+        li:last-child {
+            color: blue;
+        }
+
+        p::first-line {
+            color: red;
+            content: "before 가상 요소를 활용한 내용";
+            font-size: 3em;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://www.naver.com/">네이버 바로가기</a> <br>
+    <p class="color hot">red</p>
+    <p class="cool color">blue</p>
+    <p class="colorful nature">rainbow</p>
+
+    <ul>
+        <li>CSS</li>
+        <li>HTML</li>
+        <li>HTML</li>
+        <li>HTML</li>
+        <li>JS</li>
+    </ul>
+
+    <p>
+        강의 내용 수준이 높고 리뷰어에게 코드 리뷰도 자세히 받을 수 있어서 실력 향상에 도움이 되었습니다.<br> 친구들에게도 적극 추천했어요!!
+    </p>
+
+
+</body>
+
+</html>
