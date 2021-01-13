@@ -1,0 +1,14 @@
+*{
+    text-decoration: none;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+    color: black;
+}
+
+.course1{
+    list-style-type: lower-alpha;
+}
+.course2{
+    list-style-type: lower-alpha;  
+}

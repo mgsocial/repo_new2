@@ -9,3 +9,20 @@
 .css {
     text-decoration: underline;
 }
+
+div {
+
+    background-color: pink;
+    background-image: url(https://img.huffingtonpost.com/asset/5c6a1b8a250000be00c88cae.png?cache=41JoK4KsMg&ops=scalefit_630_noupscale);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-attachment: fixed;
+}
+
+div { width: 100px; height: 100px; color: white; }
+.red, .blue { position: absolute; }
+.green { position: relative; }
+.red { z-index:5; }
+.blue { z-index:6; }
+.green { z-index:7; }
+.orange { z-index:8; } 
